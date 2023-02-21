@@ -240,3 +240,90 @@ nav {
     margin-bottom: 30px;
     font-weight: 500;
 }
+
+.footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+    
+   
+}
+.footer a img {
+    width: 20px;
+    
+    
+}
+
+.footer hr {
+   background: #999;
+   height: 1px;
+   width: 100%;
+   
+}
+
+.footer p {
+    padding-bottom: 15px;
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    background-color: #fff;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+.icon-bars {
+    display: none;
+}
+
+/* ---for small screen devices */
+    @media only screen and (max-width:700px){
+        .logo {
+            position: fixed;
+            top: 4%;
+            left: 7%;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            display: inline-block;
+            width: 100%;
+            padding: 100px 0px 20px 0px;
+            background: #000;
+            text-align: right;
+            
+
+        }
+
+         .nav-links li {
+            margin: 10px 0;
+            display: block;
+            padding-right: 20px;
+        }
+
+        .icon-bars {
+            width: 120px;
+            height: 120px;
+            fill: white;
+            background-color: white;
+        }
+
+        
+    }
