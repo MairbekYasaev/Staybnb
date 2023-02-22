@@ -287,43 +287,42 @@ nav {
     border-radius: 2px;
 }
 
-.icon-bars {
+.menu-icon {
     display: none;
 }
 
 /* ---for small screen devices */
-    @media only screen and (max-width:700px){
-        .logo {
-            position: fixed;
-            top: 4%;
-            left: 7%;
+    @media only screen and (max-width:571px){
+     
+        nav {
+            display: block;
+            padding-left: 0;
+            text-align: center;
         }
 
-        nav {
-            position: fixed;
-            top: 0;
-            z-index: 100;
+        .logo {
+            display: block;
+            margin: auto;
+        }
+
+        .nav-links {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .nav-links li {
+            display: block;
+            margin-top: 15px;
+        }
+         
+        .register-btn {
             display: inline-block;
-            width: 100%;
-            padding: 100px 0px 20px 0px;
-            background: #000;
-            text-align: right;
+            margin-top: 20px;
+            margin-left: 30px;
+            font-weight: 600;
             
 
         }
-
-         .nav-links li {
-            margin: 10px 0;
-            display: block;
-            padding-right: 20px;
-        }
-
-        .icon-bars {
-            width: 120px;
-            height: 120px;
-            fill: white;
-            background-color: white;
-        }
-
         
     }
